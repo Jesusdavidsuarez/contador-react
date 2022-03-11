@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--mesta tag PWA-->
+    <meta name="theme-color" content="#333333" >
+    <meta name="MobileOptimized" content="width" >
+    <meta name="HandheldFriendly" content="true" >
+    <meta name="apple-mobile-web-app-capable" content="no" >
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" >
+
+    <!--Icon-->
+    <link rel="shortcut icon" href="./faicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="./faicon.png" type="image/png">
+    <!--<link rel="apple-touch-startup-image" href="./faicon.png" type="image/png">-->
+
+    <!--Manifiesto-->
+    <link rel="manifest" href="./manifest.json">
+   
+    <title>React CDN</title>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="root">
+
+       <script type="text/babel" src="./components/Contador.js"></script>
+       
+        <script type="text/babel" src="./index.js">
+            // const Interpolar =()=>{
+            //     // const nombre = prompt("Cual es tu nombre perro?")
+            //     const [numero, setNumero]= React.useState(0);
+            //     setInterval(()=>{
+            //         setNumero(numero + 1);
+            //     }, 1500);
+            //     return(
+            //         <div>
+            //             <h1>Hola {numero} cachon</h1>
+            //             <hr/>
+            //         </div>
+            //     )
+            // }
+
+            // ReactDOM.render(
+            //    <Interpolar/>
+            //    ,
+            //     document.getElementById("root")
+            // );
+            // ReactDOM.render(React.createElement("ol", null, 
+            //     React.createElement("li", null, "uva"),
+            //     React.createElement("li", null, "manzana"),
+            //     React.createElement("li", null, "pera"),
+            // ), document.getElementById("root"));
+
+        </script>
+        <script src="./register.js"></script>
+    </div>
+</body>
+</html>
